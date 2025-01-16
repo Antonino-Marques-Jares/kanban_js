@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kanban</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="contextMenu" class="context-menu">
+    <ul>
+      <li id="editarItem">Editar Item</li>
+      <li id="excluirItem">Excluir Item</li>
+    </ul>
+  </div>
+
+  <div id="contextMenuGrupo" class="context-menu">
+    <ul>
+      <li id="editarGrupo">Editar Grupo</li>
+      <li id="excluirGrupo">Excluir Grupo</li>
+    </ul>
+  </div>
+
+  <div id="formulario">
+    <input id="nome-novo-grupo" type="text" placeholder="Nome do Grupo" />
+    <button id="add-grupo">Adicionar Grupo</button>
+    <input id="nome-novo-item" type="text" placeholder="Nome do Item" />
+    <button id="add-item">Adicionar Item</button>
+  </div>
+
+  <div id="kanban" class="kanban">
+    <div class="titulo-grupo">
+      <h1>Start</h1>
+      <div class="grupo" id="grupo-inicial"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1-crypto-js.min.js"></script
+</body>
+</html>
