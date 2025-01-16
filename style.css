@@ -1,0 +1,86 @@
+:root {
+  --kanban-bg: #FFF4CF;
+  --grupo-bg: #5FA06D;
+  --item-bg: #ffffff;
+  --context-menu-bg: #ffffff;
+  --context-menu-border: #ccc;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  font-size: 12px;
+}
+
+.kanban {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  background: var(--kanban-bg);
+  width: 100%;
+  min-height: 400px;
+}
+
+.grupo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  background-color: var(--grupo-bg);
+  border-radius: 5px;
+  min-width: 200px;
+  margin: 20px;
+}
+
+.item {
+  background-color: var(--item-bg);
+  padding: 10px;
+  border-radius: 5px;
+  cursor: grab;
+}
+
+.dragging {
+  opacity: 0.5;
+}
+
+#formulario {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  gap: 10px;
+}
+
+#formulario input,
+#formulario button {
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+.context-menu {
+  position: absolute;
+  display: none;
+  background: var(--context-menu-bg);
+  border: 1px solid var(--context-menu-border);
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.context-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.context-menu li {
+  padding: 5px;
+  cursor: pointer;
+}
+
+.context-menu li:hover {
+  background-color: #f0f0f0;
+}
